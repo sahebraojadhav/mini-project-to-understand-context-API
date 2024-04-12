@@ -1,13 +1,19 @@
 import Todo from "../Todo/Todo";
-function TodoList({ Todos }) {
+function TodoList({ todos,setTodos }) {
+  
+    function onDeleteTodo(id){
+        const newTodoList=todos.filter(todo=>todo.id !=id)
+        setTodos(newTodoList);
+    }  
+
     return (
     
-            Todos && Todos.map((todo) => 
+            todos && todos.map((todo) => 
             <Todo 
                 key={todo.id} 
                  text={todo.text}
                 isFinished={todo.isFinished} 
-             
+               deleteTodo={()=>onDeleteTodo(todo.id)}
              />)
       
     );
