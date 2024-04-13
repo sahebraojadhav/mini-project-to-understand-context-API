@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import TodoList from './components/TodoList/TodoList'
@@ -17,6 +17,10 @@ function App() {
     let nextId=todos.length+1;
     setTodos([...todos,{id:nextId,isFinished:false , text:todoText}])
   }
+
+  useEffect(()=>{
+    console.log(todos);
+  })
 
   return (
     <>
