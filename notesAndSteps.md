@@ -28,3 +28,11 @@ reducers are just fuctions
 
 refer the image of working of state image
 
+=++++++++++++++++++++++++++++++++++++++++++++++++
+
+implementatio of useReducer 
+ const[todos,dispatch]=useReducer(TodoReducers,[])
+
+ const [stateVariable,dispatch]=useReducer(reducerMethod,initialState)
+
+ dispatch is used to trigger task
