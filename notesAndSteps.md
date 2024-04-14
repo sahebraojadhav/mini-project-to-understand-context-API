@@ -22,3 +22,9 @@ finally they create common document which is helpful to commenly edit
 ========================================================================================================
 
 
+############ REDUCERS #########
+
+reducers are just fuctions 
+
+refer the image of working of state image
+
